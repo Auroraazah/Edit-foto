@@ -1,6 +1,6 @@
 plugins {
     id 'com.android.application'
-    id 'kotlin-android'
+    id 'org.jetbrains.kotlin.android'
 }
 android {
     namespace 'com.hpjadul.editfoto'
@@ -11,6 +11,11 @@ android {
         targetSdk 34
         versionCode 1
         versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
     }
 }
 dependencies {
