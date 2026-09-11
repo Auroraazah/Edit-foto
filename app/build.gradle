@@ -1,16 +1,18 @@
 plugins {
     id 'com.android.application'
+    id 'kotlin-android'
 }
-
 android {
     namespace 'com.hpjadul.editfoto'
-    compileSdk 35
-
+    compileSdk 34
     defaultConfig {
-        applicationId 'com.hpjadul.editfoto'
-        minSdk 23
-        targetSdk 35
+        applicationId "com.hpjadul.editfoto"
+        minSdk 24
+        targetSdk 34
         versionCode 1
-        versionName '1.0'
+        versionName "1.0"
     }
+}
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
 }
